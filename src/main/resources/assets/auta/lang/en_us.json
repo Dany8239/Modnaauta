@@ -1,8 +1,10 @@
 {
+  "entity.auta.autonda": "Supercar",
   "item.auta.jj_sword": "JJ Sword",
   "item.auta.jj_armor_helmet": "JJ Helmet",
   "entity.auta.supercar": "Supercar",
   "item.auta.jj_axe": "JJ Axe",
+  "item.auta.autonda_spawn_egg": "Supercar Spawn Egg",
   "item.auta.supercar_spawn_egg": "Supercar Spawn Egg",
   "item.auta.jj_armor_chestplate": "JJ Chestplate",
   "item.auta.jj_shovel": "JJ Shovel",

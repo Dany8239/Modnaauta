@@ -1,0 +1,13 @@
+{
+  "group": "auta",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "auta:jj_block"
+    }
+  ],
+  "result": {
+    "item": "auta:jj",
+    "count": 9
+  }
+}

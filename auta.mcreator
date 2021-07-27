@@ -1,0 +1,251 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "JJ",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jj"
+    },
+    {
+      "name": "JJOre",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jj_ore"
+    },
+    {
+      "name": "JJBlock",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jj_block"
+    },
+    {
+      "name": "JJOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jj_ore_block_recipe"
+    },
+    {
+      "name": "JJBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jj_block_ore_recipe"
+    },
+    {
+      "name": "JJOreSmelting",
+      "type": "recipe",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jj_ore_smelting"
+    },
+    {
+      "name": "JJPickaxe",
+      "type": "tool",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jj_pickaxe"
+    },
+    {
+      "name": "JJAxe",
+      "type": "tool",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jj_axe"
+    },
+    {
+      "name": "JJSword",
+      "type": "tool",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jj_sword"
+    },
+    {
+      "name": "JJShovel",
+      "type": "tool",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jj_shovel"
+    },
+    {
+      "name": "JJHoe",
+      "type": "tool",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jj_hoe"
+    },
+    {
+      "name": "JJPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jj_pickaxe_recipe"
+    },
+    {
+      "name": "JJAxeRecipe",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jj_axe_recipe"
+    },
+    {
+      "name": "JJSwordRecipe",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jj_sword_recipe"
+    },
+    {
+      "name": "JJShovelRecipe",
+      "type": "recipe",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jj_shovel_recipe"
+    },
+    {
+      "name": "JJHoeRecipe",
+      "type": "recipe",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jj_hoe_recipe"
+    },
+    {
+      "name": "JJArmor",
+      "type": "armor",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jj_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "JJArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jj_armor_helmet_recipe"
+    },
+    {
+      "name": "JJArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jj_armor_body_recipe"
+    },
+    {
+      "name": "JJArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jj_armor_leggings_recipe"
+    },
+    {
+      "name": "JJArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jj_armor_boots_recipe"
+    },
+    {
+      "name": "Supercar",
+      "type": "mob",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "supercar"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.auta.jj_sword": "JJ Sword",
+      "item.auta.jj_armor_helmet": "JJ Helmet",
+      "entity.auta.supercar": "Supercar",
+      "item.auta.jj_axe": "JJ Axe",
+      "item.auta.supercar_spawn_egg": "Supercar Spawn Egg",
+      "item.auta.jj_armor_chestplate": "JJ Chestplate",
+      "item.auta.jj_shovel": "JJ Shovel",
+      "item.auta.jj_pickaxe": "JJ Pickaxe",
+      "item.auta.jj_armor_boots": "JJ Boots",
+      "item.auta.jj": "JJ",
+      "item.auta.jj_hoe": "JJ Hoe",
+      "block.auta.jj_ore": "JJ Ore",
+      "item.auta.jj_armor_leggings": "JJ Leggings",
+      "block.auta.jj_block": "Block of JJ"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "auta",
+    "modName": "Auta",
+    "version": "1.0.0",
+    "author": "janmichalek, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "modElementsPackage": "net.mcreator.auta",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100118117
+}

@@ -1,0 +1,24 @@
+{
+  "group": "auta",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "auta:jj"
+    },
+    "1": {
+      "item": "auta:jj"
+    },
+    "2": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "auta:jj_sword",
+    "count": 1
+  }
+}

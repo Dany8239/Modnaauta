@@ -1,0 +1,30 @@
+{
+  "group": "auta",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "auta:jj"
+    },
+    "1": {
+      "item": "auta:jj"
+    },
+    "2": {
+      "item": "auta:jj"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "auta:jj_pickaxe",
+    "count": 1
+  }
+}

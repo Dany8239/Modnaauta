@@ -1,0 +1,26 @@
+{
+  "group": "auta",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "auta:jj"
+    },
+    "2": {
+      "item": "auta:jj"
+    },
+    "3": {
+      "item": "auta:jj"
+    },
+    "5": {
+      "item": "auta:jj"
+    }
+  },
+  "result": {
+    "item": "auta:jj_armor_boots",
+    "count": 1
+  }
+}

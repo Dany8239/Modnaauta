@@ -1,0 +1,36 @@
+{
+  "group": "auta",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "auta:jj"
+    },
+    "1": {
+      "item": "auta:jj"
+    },
+    "2": {
+      "item": "auta:jj"
+    },
+    "3": {
+      "item": "auta:jj"
+    },
+    "5": {
+      "item": "auta:jj"
+    },
+    "6": {
+      "item": "auta:jj"
+    },
+    "8": {
+      "item": "auta:jj"
+    }
+  },
+  "result": {
+    "item": "auta:jj_armor_leggings",
+    "count": 1
+  }
+}

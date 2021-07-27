@@ -1,0 +1,12 @@
+{
+  "group": "auta",
+  "type": "minecraft:smelting",
+  "experience": 0.7,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "auta:jj_ore"
+  },
+  "result": {
+    "item": "auta:jj"
+  }
+}

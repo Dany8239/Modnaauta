@@ -1,0 +1,39 @@
+{
+  "group": "auta",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "auta:jj"
+    },
+    "2": {
+      "item": "auta:jj"
+    },
+    "3": {
+      "item": "auta:jj"
+    },
+    "4": {
+      "item": "auta:jj"
+    },
+    "5": {
+      "item": "auta:jj"
+    },
+    "6": {
+      "item": "auta:jj"
+    },
+    "7": {
+      "item": "auta:jj"
+    },
+    "8": {
+      "item": "auta:jj"
+    }
+  },
+  "result": {
+    "item": "auta:jj_armor_chestplate",
+    "count": 1
+  }
+}

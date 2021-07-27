@@ -27,11 +27,6 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
-import net.minecraft.entity.ai.goal.SwimGoal;
-import net.minecraft.entity.ai.goal.RandomWalkingGoal;
-import net.minecraft.entity.ai.goal.MeleeAttackGoal;
-import net.minecraft.entity.ai.goal.LookRandomlyGoal;
-import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.MobEntity;
@@ -43,8 +38,12 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.CreatureAttribute;
 
+import net.mcreator.auta.procedures.SupercarOnEntityTickUpdateProcedure;
 import net.mcreator.auta.entity.renderer.SupercarRenderer;
 import net.mcreator.auta.AutaModElements;
+
+import java.util.Map;
+import java.util.HashMap;
 
 @AutaModElements.ModElement.Tag
 public class SupercarEntity extends AutaModElements.ModElement {
@@ -94,22 +93,12 @@ public class SupercarEntity extends AutaModElements.ModElement {
 		public CustomEntity(EntityType<CustomEntity> type, World world) {
 			super(type, world);
 			experienceValue = 0;
-			setNoAI(false);
+			setNoAI(true);
 		}
 
 		@Override
 		public IPacket<?> createSpawnPacket() {
 			return NetworkHooks.getEntitySpawningPacket(this);
-		}
-
-		@Override
-		protected void registerGoals() {
-			super.registerGoals();
-			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false));
-			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 1));
-			this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
-			this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
-			this.goalSelector.addGoal(5, new SwimGoal(this));
 		}
 
 		@Override
@@ -138,6 +127,23 @@ public class SupercarEntity extends AutaModElements.ModElement {
 			double z = this.getPosZ();
 			Entity entity = this;
 			return retval;
+		}
+
+		@Override
+		public void baseTick() {
+			super.baseTick();
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				SupercarOnEntityTickUpdateProcedure.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override

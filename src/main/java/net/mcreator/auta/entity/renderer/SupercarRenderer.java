@@ -60,11 +60,6 @@ public class SupercarRenderer {
 		}
 
 		@Override
-		public void setRotationAngles(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
-			// previously the render function, render code was moved to a method below
-		}
-
-		@Override
 		public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue,
 				float alpha) {
 			bone.render(matrixStack, buffer, packedLight, packedOverlay);
@@ -74,6 +69,9 @@ public class SupercarRenderer {
 			modelRenderer.rotateAngleX = x;
 			modelRenderer.rotateAngleY = y;
 			modelRenderer.rotateAngleZ = z;
+		}
+
+		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
 		}
 	}
 }

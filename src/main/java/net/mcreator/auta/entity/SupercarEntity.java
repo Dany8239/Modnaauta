@@ -48,8 +48,8 @@ import java.util.HashMap;
 @AutaModElements.ModElement.Tag
 public class SupercarEntity extends AutaModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
-			.size(10f, 1.8f)).build("supercar").setRegistryName("supercar");
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(1f, 1f))
+					.build("supercar").setRegistryName("supercar");
 	public SupercarEntity(AutaModElements instance) {
 		super(instance, 22);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new SupercarRenderer.ModelRegisterHandler());
@@ -77,7 +77,7 @@ public class SupercarEntity extends AutaModElements.ModElement {
 		@SubscribeEvent
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
 			AttributeModifierMap.MutableAttribute ammma = MobEntity.func_233666_p_();
-			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 4.6);
+			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.3);
 			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 10);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 0);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 3);

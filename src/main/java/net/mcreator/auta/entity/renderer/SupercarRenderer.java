@@ -43,20 +43,26 @@ public class SupercarRenderer {
 			textureWidth = 16;
 			textureHeight = 16;
 			bone = new ModelRenderer(this);
-			bone.setRotationPoint(0.0F, 24.0F, 0.0F);
-			bone.setTextureOffset(0, -39).addBox(-1.0F, -24.0F, -30.0F, 51.0F, 24.0F, 31.0F, 0.0F, false);
-			bone.setTextureOffset(0, 0).addBox(42.0F, -8.0F, -36.0F, 8.0F, 8.0F, 6.0F, 0.0F, false);
-			bone.setTextureOffset(0, 0).addBox(41.0F, -8.0F, 0.0F, 8.0F, 8.0F, 6.0F, 0.0F, false);
-			bone.setTextureOffset(0, 0).addBox(-1.0F, -1.0F, 0.0F, 1.0F, 1.0F, 1.0F, 0.0F, false);
-			bone.setTextureOffset(-70, -30).addBox(-1.0F, -24.0F, -52.0F, 21.0F, 24.0F, 22.0F, 0.0F, false);
-			bone.setTextureOffset(0, 0).addBox(-1.0F, -1.0F, 0.0F, 1.0F, 1.0F, 1.0F, 0.0F, false);
-			bone.setTextureOffset(0, 0).addBox(-1.0F, -24.0F, 1.0F, 20.0F, 24.0F, 23.0F, 0.0F, false);
-			bone.setTextureOffset(0, 0).addBox(-1.0F, -47.0F, 0.0F, 49.0F, 25.0F, 1.0F, 0.0F, false);
-			bone.setTextureOffset(0, 0).addBox(-2.0F, -48.0F, -31.0F, 52.0F, 25.0F, 1.0F, 0.0F, false);
-			bone.setTextureOffset(0, 0).addBox(0.0F, -47.0F, -30.0F, 1.0F, 23.0F, 30.0F, 0.0F, false);
-			bone.setTextureOffset(0, 0).addBox(-1.0F, -6.0F, -20.0F, 1.0F, 1.0F, 1.0F, 0.0F, false);
-			bone.setTextureOffset(0, 0).addBox(-1.0F, -1.0F, 0.0F, 1.0F, 1.0F, 1.0F, 0.0F, false);
-			bone.setTextureOffset(0, 0).addBox(50.0F, -46.0F, -29.0F, 1.0F, 21.0F, 29.0F, 0.0F, false);
+			bone.setRotationPoint(15.0F, 55.0F, 24.0F);
+			setRotationAngle(bone, 0.0F, 1.5708F, 0.0F);
+			bone.setTextureOffset(0, -39).addBox(-2.0F, -31.0F, -30.0F, 36.0F, 25.0F, 28.0F, 0.0F, false);
+			bone.setTextureOffset(0, 0).addBox(29.0F, -17.0F, -36.0F, 5.0F, 9.0F, 3.0F, 0.0F, false);
+			bone.setTextureOffset(0, 0).addBox(28.0F, -17.0F, 0.0F, 5.0F, 9.0F, 3.0F, 0.0F, false);
+			bone.setTextureOffset(0, 0).addBox(-18.0F, -10.0F, 0.0F, 5.0F, 6.0F, 0.0F, 0.0F, false);
+			bone.setTextureOffset(-70, -30).addBox(-2.0F, -33.0F, -52.0F, 6.0F, 25.0F, 19.0F, 0.0F, false);
+			bone.setTextureOffset(0, 0).addBox(-18.0F, -10.0F, 0.0F, 5.0F, 6.0F, 0.0F, 0.0F, false);
+			bone.setTextureOffset(0, 0).addBox(-2.0F, -33.0F, 1.0F, 5.0F, 25.0F, 20.0F, 0.0F, false);
+			bone.setTextureOffset(0, 0).addBox(-2.0F, -56.0F, 0.0F, 34.0F, 26.0F, 0.0F, 0.0F, false);
+			bone.setTextureOffset(0, 0).addBox(-3.0F, -57.0F, -31.0F, 37.0F, 26.0F, 0.0F, 0.0F, false);
+			bone.setTextureOffset(0, 0).addBox(-3.0F, -56.0F, -30.0F, 5.0F, 23.0F, 27.0F, 0.0F, false);
+			bone.setTextureOffset(0, 0).addBox(-18.0F, -15.0F, -20.0F, 5.0F, 6.0F, 0.0F, 0.0F, false);
+			bone.setTextureOffset(0, 0).addBox(-18.0F, -10.0F, 0.0F, 5.0F, 6.0F, 0.0F, 0.0F, false);
+			bone.setTextureOffset(0, 0).addBox(33.0F, -55.0F, -29.0F, 5.0F, 22.0F, 26.0F, 0.0F, false);
+		}
+
+		@Override
+		public void setRotationAngles(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+			// previously the render function, render code was moved to a method below
 		}
 
 		@Override
@@ -69,9 +75,6 @@ public class SupercarRenderer {
 			modelRenderer.rotateAngleX = x;
 			modelRenderer.rotateAngleY = y;
 			modelRenderer.rotateAngleZ = z;
-		}
-
-		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
 		}
 	}
 }

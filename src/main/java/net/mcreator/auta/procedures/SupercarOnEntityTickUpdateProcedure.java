@@ -41,7 +41,7 @@ public class SupercarOnEntityTickUpdateProcedure extends AutaModElements.ModElem
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if (world instanceof ServerWorld) {
-			((ServerWorld) world).spawnParticle(ParticleTypes.SMOKE, x, y, z, (int) 200, 1, 1, 1, 1);
+			((ServerWorld) world).spawnParticle(ParticleTypes.SMOKE, x, y, z, (int) 60, 0, 1, 0, 0);
 		}
 	}
 }
